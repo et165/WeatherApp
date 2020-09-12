@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <header><h1>Weather</h1></header>
+      <div id="main">
+        <img id="weatherImage" src="icons/cloud.png" alt="" />
+        <h1>
+          <span id="temp">Temp</span>
+          <span id="units">°C</span>
+        </h1>
+        <h2 id="disc">Disc</h2>
+        <h3 id="place">Place</h3>
+      </div>
+      <form onsubmit="getWeather(city.value); return false;">
+        <input id="city" type="text" />
+        <input id="btn" type="submit" />
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
